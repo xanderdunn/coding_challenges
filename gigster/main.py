@@ -5,6 +5,7 @@ import sys
 import tokenize
 import cStringIO
 
+# Recursive-decent itrator-based parsing from http://effbot.org/zone/simple-iterator-parser.htm
 def atom(next, token):
     if token[1] == "[":
         out = []
